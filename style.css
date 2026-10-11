@@ -1,234 +1,178 @@
-
-* {
+*{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
 body {
-    background-color: black;
-    margin: 0;
-    padding: 20px;
+    background-color:black;
+}
+.Top {
+    
+    padding: 10px;
+    box-shadow: 3px 3px 5px black;
+    border-radius:5px;
+    margin:10px;
+    text-align:center;
+    background-color: rgb(219, 146, 10);
 }
 
+.container{
+    padding:20px;
+    margin:10px;
+    box-shadow: 3px 3px 5px black;
+    border-radius:5px;
+    background:linear-gradient(black,rgb(219, 146, 10),black)
+}
+.insidecon {
+text-align: center;
+background:linear-gradient(black,rgb(219, 146, 10),black);
+}
 
-/* HEADER */
-
-.header {
+.box1{
     text-align: center;
-    margin-bottom: 30px;
+    box-shadow: 3px 3px 5px rgb(246, 244, 244);
+    border-radius:5px;
+    height: 200px;
+    width:200px;
+    display:inline-block;
+    color:white;
 }
 
-.header h1 {
-    background-color: black;
-    border-top: solid 4px rgb(219, 146, 10);
-    border-bottom: solid 4px rgb(219, 146, 10);
-    border-radius: 20px;
-
-    color: rgb(219, 146, 10);
-
-    margin: 0;
-    padding: 30px;
-
-    font-size: 60px;
-}
-
-
-/* CONTAINER */
-
-.container {
-    background-color: black;
+.box2{
     text-align: center;
+    box-shadow: 3px 3px 5px rgb(255, 255, 255);
+    border-radius:5px;
+    height: 200px;
+    width:200px;
+    display:inline-block;
+    margin:20px;
+    color:white;
 }
 
-.inside {
-    background-color: black;
-
-    border-top: solid 4px rgb(219, 146, 10);
-    border-bottom: solid 4px rgb(219, 146, 10);
-    border-radius: 20px;
-
-    padding: 30px 20px 60px;
+.box3{
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 237, 237);
+    border-radius:5px;
+    height: 200px;
+    width:200px;
+    display:inline-block;
+    color:white;
 }
 
-
-/* SECTION TITLE */
-
-.inside h1 {
-    color: rgb(219, 146, 10);
-
-    background-color: white;
-
-    border-top: solid 7px rgb(219, 146, 10);
-    border-bottom: solid 7px rgb(219, 146, 10);
-    border-radius: 20px;
-
-    width: fit-content;
-
-    margin: 40px auto;
-    padding: 15px 30px;
-
-    font-size: 50px;
+.box4{
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+    border-radius:5px;
+    height: 200px;
+    width:200px;
+    display:inline-block;
 }
 
-
-/* BOX CONTAINER */
-
-.boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 50px;
-
-    margin-bottom: 80px;
+.box5{
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+    border-radius:5px;
+    height: 200px;
+    width:200px;
+    display:inline-block;
+    margin:20px;
 }
 
-
-/* BOX DESIGN */
-
-.insidebox,
-.insideboxes {
-    background-color: rgb(8, 8, 8);
+.box6{
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+    border-radius:5px;
+    height: 200px;
+    width:200px;
+    display:inline-block;
 }
 
+/* Hover Animation */
 
-/* TEXT INSIDE BOX */
-
-.insidebox p,
-.insideboxes p {
-    color: white;
-
-    border-top: solid 4px rgb(219, 146, 10);
-    border-bottom: solid 4px rgb(219, 146, 10);
-
-    border-radius: 20px;
-
-    height: 300px;
-    width: 300px;
-
-    margin: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 40px;
-}
-
-
-/* ========================= */
-/* HOVER ANIMATION */
-/* ========================= */
-
-
-/* LEFT */
-
-.insidebox:nth-child(1) {
-    transition: 0.5s ease;
-}
-
-.insidebox:nth-child(1):hover {
+/* Left Animation */
+.box1:hover{
+    background-color: rgb(219, 146, 10);
+    color:white;
+    transition:0.5s;
     transform: translateX(-30px);
     box-shadow: 0 0 25px rgb(219, 146, 10);
 }
 
-
-/* CENTER */
-
-.insidebox:nth-child(2) {
-    transition: 0.5s ease;
+.box1:active{
+    background-color:black;
+}
+/* Center Animation */
+.box2:hover{
+    background-color: rgb(219, 146, 10);
+    color:white;
+    transition:0.5s;
+    transform: translateY(-30px);
+    box-shadow: 0 0 25px rgb(219, 146, 10);
 }
 
-.insidebox:nth-child(2):hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 30px rgb(219, 146, 10);
+.box2:active{
+    background-color:black;
 }
-
-
-/* RIGHT */
-
-.insidebox:nth-child(3) {
-    transition: 0.5s ease;
-}
-
-.insidebox:nth-child(3):hover {
+/* Right Animation */
+.box3:hover{
+    background-color: rgb(219, 146, 10);
+    color:white;
+    transition:0.5s;
     transform: translateX(30px);
     box-shadow: 0 0 25px rgb(219, 146, 10);
 }
 
+.box3:active{
+    background-color:black;
+}
 
-/* ========================= */
-/* AUTOPLAY ANIMATION */
-/* ========================= */
+/* Auto play Animation */
 
-
-/* LEFT */
-
-.insideboxes:nth-child(1) {
+.box4 {
     animation: moveLeft 2s infinite alternate ease-in-out;
+    background-color:black;
+    color:white;
 }
-
-
-/* CENTER */
-
-.insideboxes:nth-child(2) {
-    animation: growCenter 2s infinite alternate ease-in-out;
-}
-
-
-/* RIGHT */
-
-.insideboxes:nth-child(3) {
-    animation: moveRight 2s infinite alternate ease-in-out;
-}
-
-
-/* LEFT */
 
 @keyframes moveLeft {
-
+    
     from {
-        transform: translateX(0);
-        box-shadow: 0 0 0px rgb(219, 146, 10);
+        transform:translateX(0);
     }
-
     to {
-        transform: translateX(-30px);
+        transform:translateX(-30px);
         box-shadow: 0 0 25px rgb(219, 146, 10);
     }
-
 }
 
-
-/* CENTER */
-
-@keyframes growCenter {
-
-    from {
-        transform: scale(1);
-        box-shadow: 0 0 0px rgb(219, 146, 10);
+.box5 {
+    animation: moveCenter 2s infinite alternate ease-in-out;
+    background-color:black;
+    color: white;
+}
+@keyframes moveCenter {
+    from { 
+        transform: translateY(0px)
     }
-
     to {
-        transform: scale(1.08);
-        box-shadow: 0 0 30px rgb(219, 146, 10);
+        transform:translateY(-30px);
+        box-shadow: 0 0 25px rgb(219, 146, 10);
     }
-
 }
-
-
-/* RIGHT */
-
+.box6 {
+    animation: moveRight 2s infinite alternate ease-in-out;
+    background-color:black;
+    color:white;
+}
 @keyframes moveRight {
-
     from {
-        transform: translateX(0);
-        box-shadow: 0 0 0px rgb(219, 146, 10);
+        transform: translateX(0px);
     }
-
     to {
-        transform: translateX(30px);
+        transform:translateX(30px);
         box-shadow: 0 0 25px rgb(219, 146, 10);
     }
+}
 
+h1 {
+    color:white;
 }
